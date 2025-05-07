@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-# Vérifier si l'adresse IP est fournie en argument
+# Ce script vérifie si une adresse IP est fournie en argument et envoie un ping 5 fois pour vérifier la connectivité réseau.
 if [ -z "$1" ]; then
   echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
   exit 1
 fi
-
-# Pinger l'adresse IP 5 fois
+# Envoyer un ping 5 fois à l'adresse IP spécifiée
 ping -c 5 "$1"
