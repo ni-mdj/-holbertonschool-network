@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
-# Afficher les ports TCP et UDP en écoute avec le PID et le nom du programme
 
-echo "Connexions Internet actives (uniquement les serveurs)"
-
-# Utiliser netstat pour afficher les sockets en écoute avec PID/Nom du programme
-sudo netstat -tunlp | grep LISTEN
-
-# Afficher les sockets de domaine UNIX actifs (uniquement les serveurs)
-echo -e "\nSockets de domaine UNIX actifs (uniquement les serveurs)"
-sudo netstat -lxp | grep LISTEN
+#écris un script Bash
+sudo netstat -tulnp | grep LISTEN
