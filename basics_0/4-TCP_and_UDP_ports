@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+# utilisateur netstat
+netstat -lp
