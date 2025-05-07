@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 # Afficher les ports TCP et UDP en écoute avec le PID et le nom du programme
 
 echo "Connexions Internet actives (uniquement les serveurs)"
