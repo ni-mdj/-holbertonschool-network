@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Vérifie si un argument est passé
-if [ -z "$1" ]; then
-    echo "Usage: 5-is_the_host_on_the_network {ADRESSE_IP}"
+
+# Vérifier argument fourni
+if [ "$#" -ne 1 ]; then
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
     exit 1
 fi
-# Ping l'adresse IP fournie 5 fois
+
+# Effectuer 5 pings vers l'adresse IP
 ping -c 5 "$1"
