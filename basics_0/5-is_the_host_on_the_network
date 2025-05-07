@@ -4,6 +4,5 @@ if [ -z "$1" ]; then
     echo "Usage: 5-is_the_host_on_the_network {ADRESSE_IP}"
     exit 1
 fi
-
 # Ping l'adresse IP fournie 5 fois
 ping -c 5 "$1"
