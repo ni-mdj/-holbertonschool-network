@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#baffiche toutes les adresses IP IPv4 actives sur la machine.
+# affiche toutes les adresses IP IPv4 actives sur la machine.
 
 # Utilise la commande ip pour lister les adresses IPv4 actives
 ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
